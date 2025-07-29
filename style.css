@@ -104,7 +104,6 @@ nav ul li a{
 }
 
 main{
-    min-width: 400px;
     max-width: 800px;
     width: 100%;
     overflow-x: hidden;
