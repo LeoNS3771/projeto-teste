@@ -42,6 +42,8 @@ body{
     color: black;
     font-family: var(--fonte0);
     font-size: 12pt;
+    width: 100%;
+    overflow-x: hidden;
 }
 h1{
     font-family: var(--fonte2);
@@ -68,6 +70,8 @@ header{
     background: linear-gradient(to bottom, var(--cor2), var(--cor5));
     text-align: center;
     padding: 40px;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 nav ul{
@@ -103,10 +107,10 @@ main{
     min-width: 400px;
     max-width: 800px;
     width: 100%;
+    overflow-x: hidden;
     margin: 0 auto; /* centraliza */
     padding: 20px;
     background-color: white;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -135,6 +139,8 @@ footer{
     padding: 15px;
     text-align: center;
     color: white;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 article#caixa-titulo{
@@ -170,17 +176,20 @@ article#caixa-conteudo{
     gap: 0;
 }
 
-div.video{
-    position: relative;
-    background-color: var(--cor4);
-    margin: 0 auto 15px auto;
-    aspect-ratio: 16/9;
+div.video {
+  position: relative;
+  background-color: var(--cor4);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-div.video > iframe{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+div.video > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
