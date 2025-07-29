@@ -173,10 +173,8 @@ article#caixa-conteudo{
 div.video{
     position: relative;
     background-color: var(--cor4);
-    height: 0;
-    margin: 0 -20px 15px -20px;
-    padding-bottom: 56.25%;
-
+    margin: 0 auto 15px auto;
+    aspect-ratio: 16/9;
 }
 
 div.video > iframe{
